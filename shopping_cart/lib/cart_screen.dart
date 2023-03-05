@@ -53,7 +53,6 @@ class _CartScreenState extends State<CartScreen> {
                 future: cart.getData(),
                 builder: (context , AsyncSnapshot<List<Cart>> snapshot){
 
-                  // if(snapshot.hasData){
 
                     if(snapshot.data!.isEmpty){
 
@@ -236,10 +235,6 @@ class _CartScreenState extends State<CartScreen> {
                             }),
                       );
                     }
-
-                  // }
-
-
 
             }),
             Consumer<CartProvider>(builder: (context , value , child){

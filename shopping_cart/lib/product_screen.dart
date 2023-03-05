@@ -1,4 +1,4 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shopping_cart/cart_model.dart';
@@ -55,7 +55,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     },
 
                 ),
-                animationDuration:const Duration(milliseconds: 300),
+                // animationDuration:const Duration(milliseconds: 300),
                 child:const Icon(Icons.shopping_bag_outlined),
               ),
             ),
